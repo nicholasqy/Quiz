@@ -1,0 +1,134 @@
+fun main(args: Array<String>) {
+
+    var score = 0
+    val name = readlnOrNull() ?: "TestTaker"
+    println("Quiz Time")
+
+// Q 1
+    println("\nWhat is the capital of Canada?\na. Toronto\nb. Vancouver\nc. Ottawa\nd. Montreal")
+    val q1Response = readlnOrNull() ?: ""
+    if (q1Response.equals("c", true) ||
+        q1Response.equals("Ottawa", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect.")
+    }
+
+// Q 2
+    println("\nWhat is the boiling point of water in Celsius because who uses Fahrenheit?\na. 0\nb. 50\nc. 100\nd. 150")
+    val q2Response = readlnOrNull() ?: ""
+    if (q2Response.equals("c", true) ||
+        q2Response.equals("100", true)
+        ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 3
+    println("\nWhat is the colour of the sky on a clear day?\na. Black\nb. Blue\nc. Red\nd. White")
+    val q3Response = readlnOrNull() ?: ""
+    if (q3Response.equals("b", true) ||
+        q3Response.equals("Blue", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect.")
+    }
+
+// Q 4
+    println("\nIs the Earth a Square?\na. True\nb. False")
+    val q4Response = readlnOrNull() ?: ""
+    if (q4Response.equals("b", true) ||
+        q4Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 5
+    println("\nWhat is the name of the tallest mountain on Earth?\na. Mt. Everest\nb. Mt. Fuji\nc.Mt. Baker")
+    val q5Response = readlnOrNull() ?: ""
+    if (q5Response.equals("a", true) ||
+        q5Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 6
+    println("\nIs there a Canadian on the Artemis 2 mission coming in 2024?\na. True\nb. False")
+    val q6Response = readlnOrNull() ?: ""
+    if (q6Response.equals("a", true) ||
+        q6Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 7
+    println("\nWhat is the cost common car in North America?\na. Honda Accord\nb. Telsa Model Y\nc. Honda Civic\nd. Toyota Corolla")
+    val q7Response = readlnOrNull() ?: ""
+    if (q7Response.equals("d", true) ||
+        q7Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 8
+    println("\nHow old is the Earth?\na. 4.543 billion years\nb. 2.91 billion years\nc. 21 years\nd. 155 billion years\ne. 4.3 trillion years")
+    val q8Response = readlnOrNull() ?: ""
+    if (q8Response.equals("a", true) ||
+        q8Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 9
+    println("\nWhen was Sullivan Heights opened?\na. 2001\nb. 2007\nc. 2013\nd. 2000")
+    val q9Response = readlnOrNull() ?: ""
+    if (q9Response.equals("d", true) ||
+        q9Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+// Q 10
+    println("\nIs a chicken a dinosaur?\na. True\nb. False \nc. Probably")
+    val q10Response = readlnOrNull() ?: ""
+    if (q10Response.equals("b", true) ||
+        q10Response.equals("False", true)
+    ) {
+        println("Correct")
+        score++
+    } else {
+        println("Incorrect")
+    }
+
+
+// percentage thing
+    val percentage = score * 100.0 / 5
+
+// final score
+    println("\nCongratulations! (or not), $name, you got $score answers right.")
+    println("You have a score of ${"%.1f".format(percentage)} percent.")
+}
