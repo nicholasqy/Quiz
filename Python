@@ -1,0 +1,81 @@
+def main():
+    score = 0
+    name = input("Enter your name: ") or "TestTaker"
+    print("Quiz Time")
+
+    # Q 1
+    print("\nWhat is the capital of Canada?\na. Toronto\nb. Vancouver\nc. Ottawa\nd. Montreal")
+    q1Response = input() or ""
+    if q1Response.lower() in ["c", "ottawa"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 2
+    print("\nWhat is the boiling point of water in Celsius because who uses Fahrenheit?\na. 0\nb. 50\nc. 100\nd. 150")
+    q2Response = input() or ""
+    if q2Response.lower() in ["c", "100"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 3
+    print("\nWhat is the colour of the sky on a clear day?\na. Black\nb. Blue\nc. Red\nd. White")
+    q3Response = input() or ""
+    if q3Response.lower() in ["b", "blue"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 4
+    print("\nIs the Earth a Square?\na. True\nb. False")
+    q4Response = input() or ""
+    if q4Response.lower() in ["b", "false"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 5
+    print("\nWhat is the name of the tallest mountain on Earth?\na. Mt. Everest\nb. Mt. Fuji\nc. Mt. Baker")
+    q5Response = input() or ""
+    if q5Response.lower() in ["a", "mt. everest"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 6
+    print("\nIs there a Canadian on the Artemis 2 mission coming in 2024?\na. True\nb. False")
+    q6Response = input() or ""
+    if q6Response.lower() in ["a", "true"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 7
+    print("\nWhat is the cost common car in North America?\na. Honda Accord\nb. Telsa Model Y\nc. Honda Civic\nd. Toyota Corolla")
+    q7Response = input() or ""
+    if q7Response.lower() in ["d", "toyota corolla"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 8
+    print("\nHow old is the Earth?\na. 4.543 billion years\nb. 2.91 billion years\nc. 21 years\nd. 155 billion years\ne. 4.3 trillion years")
+    q8Response = input() or ""
+    if q8Response.lower() in ["a", "4.543 billion years"]:
+        print("Correct")
+        score += 1
+    else:
+        print("Incorrect")
+
+    # Q 9
+    print("\nWhen was Sullivan Heights opened?\na. 2001\nb. 2007\nc. 2013\nd. 2000")
+    q9Response = input() or ""
+    if q9Response.lower() in ["d", "200
